@@ -45,6 +45,17 @@
     <label for="ville">Ville:</label><br> <!--ajout de la case pour renseigner sa ville de résidence-->
     <input required pattern="^[A-Za-z]+" oninput="this.setCustomValidity('')" oninvalid="setCustomValidity('Veuillez entrer uniquement des lettres. ')" type="text" name="ville" id="ville"><br>
 </li>
+<li>
+    <label for="metier">Métier exercé:</label><br> <!--ajout de la case a choix unique pour renseigner sa profession-->
+    <select required name="metier" id="metier">
+   <option value="">placeholder</option>
+   <option value="paysagiste">Paysagiste</option>
+   <option value="garagiste">Garagiste</option>
+   <option value="architecte">Architecte</option>
+   <option value="dev">Developpeur</option>
+   <option value="serveur">Serveur</option>
+    </select>
+</li>
 </ul>
     </form>
 </body>
