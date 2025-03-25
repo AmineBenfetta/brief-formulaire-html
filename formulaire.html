@@ -41,6 +41,10 @@
     <label for="code-postal">Code postal:</label><br> <!--ajout de la case pour renseigner son code postal-->
     <input required type="number" id="code-postal" name="code-postal"><br>
 </li>
+<li>    
+    <label for="ville">Ville:</label><br> <!--ajout de la case pour renseigner sa ville de résidence-->
+    <input required pattern="^[A-Za-z]+" oninput="this.setCustomValidity('')" oninvalid="setCustomValidity('Veuillez entrer uniquement des lettres. ')" type="text" name="ville" id="ville"><br>
+</li>
 </ul>
     </form>
 </body>
