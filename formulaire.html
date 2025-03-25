@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>brief-formulaire</title>
+</head>
+<body>
+    <form> 
+<ul>
+<li>
+    <label for="fname">Prénom:</label><br> <!--ajout de la case pour entrer le prénom-->
+    <input required pattern="^[A-Za-z]+" oninput="this.setCustomValidity('')" oninvalid="setCustomValidity('Veuillez entrer uniquement des lettres. ')" type="text" id="fname"><br>
+</li>
+<li>
+    <label for="lname">Nom:</label><br> <!--ajout de la case pour entrer le nom-->
+    <input required pattern="^[A-Za-z]+" oninput="this.setCustomValidity('')" oninvalid="setCustomValidity('Veuillez entrer uniquement des lettres. ')" type="text" id="lname"><br>
+</li>
+<li>
+    <label for="age">Age:</label><br> <!--ajout de la case pour entrer l'age-->
+    <input required type="number" id="age" min="0" max="100"><br>
+</li>
+<li>
+    <p>Sexe:</p> <!--ajout de la selection a choix unique pour le genre-->
+    <input type="radio" id="women" name="sexe" value="Femme">
+    <label for="women">Femme</label><br>
+    <input type="radio" id="men" name="sexe" value="Homme">
+    <label for="men">Homme</label><br>
+    <input type="radio" id="trans" name="sexe" value="Autre">
+    <label for="trans">Autre</label>
+</li>
+<li>
+    <label for="email">Email:</label><br> <!--ajout de la case pour renseigner son addresse email-->
+    <input required type="email" id="email"><br>
+</li>
+<li>
+    <label for="addresse">Adresse postale:</label><br> <!--ajout de la case pour renseigner son addresse-->
+    <input required type="text" name="addresse" id="addresse"><br>
+</li>
+<li>
+    <label for="code-postal">Code postal:</label><br> <!--ajout de la case pour renseigner son code postal-->
+    <input required type="number" id="code-postal" name="code-postal"><br>
+</li>
+<li>    
+    <label for="ville">Ville:</label><br> <!--ajout de la case pour renseigner sa ville de résidence-->
+    <input required pattern="^[A-Za-z]+" oninput="this.setCustomValidity('')" oninvalid="setCustomValidity('Veuillez entrer uniquement des lettres. ')" type="text" name="ville" id="ville"><br>
+</li>
+<li>
+    <label for="metier">Métier exercé:</label><br> <!--ajout de la case a choix unique pour renseigner sa profession-->
+    <select required name="metier" id="metier">
+   <option value="">placeholder</option>
+   <option value="paysagiste">Paysagiste</option>
+   <option value="garagiste">Garagiste</option>
+   <option value="architecte">Architecte</option>
+   <option value="dev">Developpeur</option>
+   <option value="serveur">Serveur</option>
+    </select>
+</li>
+<li>
+    <label for="natio">Nationalité:</label><br> <!--ajout de la case pour renseigner sa nationalité-->
+    <select required name="natio" id="natio">
+     <option value="">placeholder</option>
+     <option value="fr" selected>FRANCE</option>
+     <option value="jp">JAPON</option>
+     <option value="us">ÉTATS UNIS</option>
+     <option value="be">BELGIQUE</option>
+     <option value="es">ESPAGNE</option>
+     <option value="de">ALLEMAGNE</option>
+     <option value="pt">PORTUGAL</option>
+     <option value="it">ITALIE</option>
+    </select>
+</li>
+<li>
+    <label for="dob">Date de naissance:</label><br> <!--ajout de la case pour renseigner sa date de naissance-->
+    <input required type="date" name="dob" id="dob"><br>
+</li>
+<li>
+    <label for="bcountry">Pays de naissance:</label><br> <!--ajout de la case pour renseigner son pays de résidence-->
+    <input required pattern="^[A-Za-z]+" oninput="this.setCustomValidity('')" oninvalid="setCustomValidity('Veuillez entrer uniquement des lettres. ')" type="text" name="bcountry" id="bcountry"><br>
+</li>
+<li>
+    <label for="social">Numéro de sécurité social:</label><br> <!--ajout de la case pour renseigner son numéro de sécurité social--> 
+    <input required type="number" name="social" id="social"><br>
+</li>
+<li>
+    <label for="passport">Numéro du passeport:</label><br> <!--ajout de la case pour renseigner son numéro de passeport--> 
+    <input required type="number" name="passport" id="passport"><br>
+</li>
+<li>
+    <label for="delivrance">Date de délivrance du passeport:</label><br> <!--ajout de la case pour renseigner sa date de délivrance du passeport-->
+    <input required type="date" name="delivrance" id="delivrance"><br>
+</li>
+<li>
+    <label for="validity">Date de validité du passeport:</label><br> <!--ajout de la case pour renseigner la date de validité du passeport-->
+    <input required type="date" name="validity" id="validity"><br>
+</li>
+<li>
+    <label for="valid">Validez le formulaire:</label> <!--ajout de la case pour valider le formulaire-->
+    <input type="submit" name="valid" id="valid">
+</li>
+</ul>
+    </form>
+</body>
+</html>
