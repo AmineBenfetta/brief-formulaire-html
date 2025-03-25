@@ -74,6 +74,10 @@
     <label for="dob">Date de naissance:</label><br> <!--ajout de la case pour renseigner sa date de naissance-->
     <input required type="date" name="dob" id="dob"><br>
 </li>
+<li>
+    <label for="bcountry">Pays de naissance:</label><br> <!--ajout de la case pour renseigner son pays de résidence-->
+    <input required pattern="^[A-Za-z]+" oninput="this.setCustomValidity('')" oninvalid="setCustomValidity('Veuillez entrer uniquement des lettres. ')" type="text" name="bcountry" id="bcountry"><br>
+</li>
 </ul>
     </form>
 </body>
