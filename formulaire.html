@@ -9,7 +9,8 @@
     <form> 
 <ul>
 <li>
-
+    <label for="fname">Prénom:</label><br> <!--ajout de la case pour entrer le prénom-->
+    <input required pattern="^[A-Za-z]+" oninput="this.setCustomValidity('')" oninvalid="setCustomValidity('Veuillez entrer uniquement des lettres. ')" type="text" id="fname"><br>
 </li>
 </ul>
     </form>
